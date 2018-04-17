@@ -16,20 +16,20 @@
 
 Returns a ticker of a given pair.
 
-- `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
+- `pair` - A string of the currency type. Either 'BtcNis', 'LtcNis', 'BchNis' or 'BtgNis'
 
 ### `getTrades(pair, since, callback)`
 
 Returns closed trades of a given pair.
 
-- `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
+- `pair` - A string of the currency type. Either 'BtcNis', 'LtcNis', 'BchNis' or 'BtgNis'
 - `since` - Return transactions for the last 'tid'
 
 ### `getOrderBook(pair, callback)`
 
 Returns the orderbook of a given pair.
 
-- `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
+- `pair` - A string of the currency type. Either 'BtcNis', 'LtcNis', 'BchNis' or 'BtgNis'
 
 ### `getBalance(credentials, callback)`
 
@@ -42,7 +42,7 @@ Returns the balance of the given account
 Returns the live orders of the given account
 
 - `credentials` - An object of type {key: your-key, secret: your-secret}
-- `pair` - A string of the currency type. Either 'BtcNis' or 'LtcBtc'
+- `pair` - A string of the currency type. Either 'BtcNis', 'LtcNis', 'BchNis' or 'BtgNis'
 
 ### `addOrder(credentials, orderDetails, callback)`
 
